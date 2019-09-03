@@ -33,7 +33,7 @@ class Box extends React.Component {
                                 <div className="box">
                                     <div className="columns is-variable is-2">
                                         <div className="column is-4-widescreen">
-                                            <div className="box">
+                                            <div className="box box-task">
                                                 <div className="tabs is-boxed">
                                                     <ul>
                                                         <li className="is-active"><a href="#" className="has-text-primary has-text-weight-bold"> Personal </a></li>
@@ -64,12 +64,16 @@ class Box extends React.Component {
                                                         <li>
                                                             <a href="#">To-Do E</a>
                                                         </li>
+                                                        <hr className="navbar-divider"/>
+                                                        <li>
+                                                            <a href="#">To-Do F</a>
+                                                        </li>
                                                     </ul>
                                                 </aside>
                                             </div>
                                         </div>
-                                        <div className="column">
-                                            <div className="box-container">
+                                        <div className="column is-fullheight">
+                                            <div className="box box-task">
                                                 <div className="field">
                                                     <p className="control has-icons-right">
                                                         <input type="text" className="input" placeholder="Add Task List"/>
@@ -77,6 +81,50 @@ class Box extends React.Component {
                                                             <FontAwesomeIcon icon={faPlusCircle} />
                                                         </span>
                                                     </p>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox1" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox1"> List A </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox2" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox2"> List B </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox3" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox3"> List C </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
+                                                </div>
+                                                <div className="field">
+                                                    <input type="checkbox" id="checkbox4" className="is-checkradio is-success"/>
+                                                    <label htmlFor="checkbox4"> List D </label>
                                                 </div>
                                             </div>
                                         </div>
