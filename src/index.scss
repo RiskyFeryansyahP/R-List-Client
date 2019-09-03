@@ -1,7 +1,13 @@
 // import all bulma component
 
 @import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/bulma-checkradio/src/sass/index.sass";
 
 .box-container {
     padding: 1.75rem;
+}
+.box-task {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
