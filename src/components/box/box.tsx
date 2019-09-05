@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faPlusCircle, faEllipsisV, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 class Box extends React.Component {
     constructor(props : never) {
@@ -13,23 +13,25 @@ class Box extends React.Component {
             <div className="hero is-medium">
                 <div className="hero-body">
                     <div className="container">
-                        <nav className="level">
-                            <div className="level-left">
-                                <div className="level-item">
-                                    <h6 className="title is-4">My Task</h6>
-                                </div>
-                            </div>
-                            <div className="level-right">
-                                <button className="button is-primary">
-                                <span className="icon">
-                                    <FontAwesomeIcon icon={faPlus} />
-                                </span>
-                                <span>New Task</span>
-                                </button>
-                            </div>
-                        </nav>
                         <div className="columns is-centered">
-                            <div className="column is-10-tablet is-12-mobile is-12-widescreen is-fullheight">
+                            <div className="column is-10-tablet is-12-mobile is-10-widescreen is-fullheight">
+                                <nav className="level">
+                                    <div className="level-left">
+                                        <div className="level-item">
+                                            <h6 className="title is-4">My Task</h6>
+                                        </div>
+                                    </div>
+                                    <div className="level-right">
+                                        <div className="level-item">
+                                            <button className="button is-primary">
+                                                <span className="icon">
+                                                    <FontAwesomeIcon icon={faPlus} />
+                                                </span>
+                                                <span>New Task</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </nav>
                                 <div className="box">
                                     <div className="columns is-variable is-2">
                                         <div className="column is-4-widescreen">
@@ -45,28 +47,63 @@ class Box extends React.Component {
                                                         To-Do List
                                                     </p>
                                                     <ul className="menu-list">
-                                                        <li>
-                                                            <a href="#">To-Do A</a>
-                                                        </li>
+                                                        <div className="level">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            To-Do A
+                                                                            <span className="icon has-text-success">
+                                                                                <FontAwesomeIcon icon={faCheckCircle} />
+                                                                            </span>
+                                                                        </a>
+                                                                        <strong className="date-list">05/09/2019</strong>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                <div className="dropdown is-right is-up is-active">
+                                                                    <div className="dropdown-trigger">
+                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                            <FontAwesomeIcon icon={faEllipsisV} />
+                                                                        </span>
+                                                                    </div>
+                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                        <div className="dropdown-content">
+                                                                            <a href="#" className="dropdown-item">
+                                                                                Done
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <hr className="navbar-divider"/>
                                                         <li>
                                                             <a href="#">To-Do B</a>
+                                                            <strong className="date-list">05/09/2019</strong>
                                                         </li>
                                                         <hr className="navbar-divider"/>
                                                         <li>
                                                             <a href="#">To-Do C</a>
+                                                            <strong className="date-list">05/09/2019</strong>
                                                         </li>
                                                         <hr className="navbar-divider"/>
                                                         <li>
                                                             <a href="#">To-Do D</a>
+                                                            <strong className="date-list">05/09/2019</strong>
                                                         </li>
                                                         <hr className="navbar-divider"/>
                                                         <li>
                                                             <a href="#">To-Do E</a>
+                                                            <strong className="date-list">05/09/2019</strong>
                                                         </li>
                                                         <hr className="navbar-divider"/>
                                                         <li>
                                                             <a href="#">To-Do F</a>
+                                                            <strong className="date-list">05/09/2019</strong>
                                                         </li>
                                                     </ul>
                                                 </aside>
