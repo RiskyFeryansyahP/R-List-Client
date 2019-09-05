@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # generate css
-src/index.css
+src/index.tsx
 
 # dependencies
 /node_modules
