@@ -1,5 +1,7 @@
 // import all bulma component
 
+$dropdown-menu-min-width : 5rem;
+
 @import "../node_modules/bulma/bulma.sass";
 @import "../node_modules/bulma-checkradio/src/sass/index.sass";
 
@@ -9,5 +11,14 @@
 .box-task {
     max-height: 400px;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
+}
+
+.date-list {
+    margin-left: 13px;
+    font-size: small;
+}
+
+.icon-task {
+    cursor: pointer;
 }
