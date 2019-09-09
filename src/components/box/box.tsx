@@ -63,7 +63,7 @@ class Box extends React.Component {
                                                             </div>
                                                             <div className="level-right">
                                                                 <div className="level-item">
-                                                                <div className="dropdown is-right is-up is-active">
+                                                                <div className="dropdown is-right is-up">
                                                                     <div className="dropdown-trigger">
                                                                         <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
                                                                             <FontAwesomeIcon icon={faEllipsisV} />
@@ -81,30 +81,175 @@ class Box extends React.Component {
                                                             </div>
                                                         </div>
                                                         <hr className="navbar-divider"/>
-                                                        <li>
-                                                            <a href="#">To-Do B</a>
-                                                            <strong className="date-list">05/09/2019</strong>
-                                                        </li>
+                                                        <div className="level">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            To-Do B
+                                                                            <span className="icon has-text-success">
+                                                                                <FontAwesomeIcon icon={faCheckCircle} />
+                                                                            </span>
+                                                                        </a>
+                                                                        <strong className="date-list">05/09/2019</strong>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                <div className="dropdown is-right is-up">
+                                                                    <div className="dropdown-trigger">
+                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                            <FontAwesomeIcon icon={faEllipsisV} />
+                                                                        </span>
+                                                                    </div>
+                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                        <div className="dropdown-content">
+                                                                            <a href="#" className="dropdown-item">
+                                                                                Done
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <hr className="navbar-divider"/>
-                                                        <li>
-                                                            <a href="#">To-Do C</a>
-                                                            <strong className="date-list">05/09/2019</strong>
-                                                        </li>
+                                                        <div className="level">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            To-Do C
+                                                                            <span className="icon has-text-success">
+                                                                                <FontAwesomeIcon icon={faCheckCircle} />
+                                                                            </span>
+                                                                        </a>
+                                                                        <strong className="date-list">05/09/2019</strong>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                <div className="dropdown is-right is-up">
+                                                                    <div className="dropdown-trigger">
+                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                            <FontAwesomeIcon icon={faEllipsisV} />
+                                                                        </span>
+                                                                    </div>
+                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                        <div className="dropdown-content">
+                                                                            <a href="#" className="dropdown-item">
+                                                                                Done
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <hr className="navbar-divider"/>
-                                                        <li>
-                                                            <a href="#">To-Do D</a>
-                                                            <strong className="date-list">05/09/2019</strong>
-                                                        </li>
+                                                        <div className="level">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            To-Do D
+                                                                            <span className="icon has-text-success">
+                                                                                <FontAwesomeIcon icon={faCheckCircle} />
+                                                                            </span>
+                                                                        </a>
+                                                                        <strong className="date-list">05/09/2019</strong>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                <div className="dropdown is-right is-up">
+                                                                    <div className="dropdown-trigger">
+                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                            <FontAwesomeIcon icon={faEllipsisV} />
+                                                                        </span>
+                                                                    </div>
+                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                        <div className="dropdown-content">
+                                                                            <a href="#" className="dropdown-item">
+                                                                                Done
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <hr className="navbar-divider"/>
-                                                        <li>
-                                                            <a href="#">To-Do E</a>
-                                                            <strong className="date-list">05/09/2019</strong>
-                                                        </li>
+                                                        <div className="level">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            To-Do E
+                                                                            <span className="icon has-text-success">
+                                                                                <FontAwesomeIcon icon={faCheckCircle} />
+                                                                            </span>
+                                                                        </a>
+                                                                        <strong className="date-list">05/09/2019</strong>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                <div className="dropdown is-right is-up">
+                                                                    <div className="dropdown-trigger">
+                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                            <FontAwesomeIcon icon={faEllipsisV} />
+                                                                        </span>
+                                                                    </div>
+                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                        <div className="dropdown-content">
+                                                                            <a href="#" className="dropdown-item">
+                                                                                Done
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <hr className="navbar-divider"/>
-                                                        <li>
-                                                            <a href="#">To-Do F</a>
-                                                            <strong className="date-list">05/09/2019</strong>
-                                                        </li>
+                                                        <div className="level">
+                                                            <div className="level-left">
+                                                                <div className="level-item">
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            To-Do F
+                                                                            <span className="icon has-text-success">
+                                                                                <FontAwesomeIcon icon={faCheckCircle} />
+                                                                            </span>
+                                                                        </a>
+                                                                        <strong className="date-list">05/09/2019</strong>
+                                                                    </li>
+                                                                </div>
+                                                            </div>
+                                                            <div className="level-right">
+                                                                <div className="level-item">
+                                                                <div className="dropdown is-right is-up">
+                                                                    <div className="dropdown-trigger">
+                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                            <FontAwesomeIcon icon={faEllipsisV} />
+                                                                        </span>
+                                                                    </div>
+                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                        <div className="dropdown-content">
+                                                                            <a href="#" className="dropdown-item">
+                                                                                Done
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </ul>
                                                 </aside>
                                             </div>
