@@ -2,10 +2,27 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faPlusCircle, faEllipsisV, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { string } from 'prop-types';
 
-class Box extends React.Component {
+interface State {
+    active : boolean
+}
+
+class Box extends React.Component<{}, State> {
     constructor(props : never) {
         super(props)
+        this.state = {
+            active : false,
+        }
+    }
+
+    public changeActive() {
+        if(this.state.active == false) {
+            this.setState({ active : true })
+        }
+        else {
+            this.setState({ active : false })
+        }
     }
 
     public render() {
@@ -63,9 +80,9 @@ class Box extends React.Component {
                                                             </div>
                                                             <div className="level-right">
                                                                 <div className="level-item">
-                                                                <div className="dropdown is-right is-up">
+                                                                <div className={this.state.active ? "dropdown is-right is-up is-active" : "dropdown is-right is-up" }>
                                                                     <div className="dropdown-trigger">
-                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                        <span className="icon icon-task" aria-haspopup="true" onClick={() => this.changeActive()} aria-controls="dropdown-menu" >
                                                                             <FontAwesomeIcon icon={faEllipsisV} />
                                                                         </span>
                                                                     </div>
@@ -97,13 +114,13 @@ class Box extends React.Component {
                                                             </div>
                                                             <div className="level-right">
                                                                 <div className="level-item">
-                                                                <div className="dropdown is-right is-up">
+                                                                <div className={this.state.active ? "dropdown is-right is-up is-active" : "dropdown is-right is-up" }>
                                                                     <div className="dropdown-trigger">
-                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                        <span className="icon icon-task" aria-haspopup="true" onClick={() => this.changeActive()} aria-controls="dropdown-menu1" >
                                                                             <FontAwesomeIcon icon={faEllipsisV} />
                                                                         </span>
                                                                     </div>
-                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div className="dropdown-menu" id="dropdown-menu1" role="menu">
                                                                         <div className="dropdown-content">
                                                                             <a href="#" className="dropdown-item">
                                                                                 Done
@@ -131,13 +148,13 @@ class Box extends React.Component {
                                                             </div>
                                                             <div className="level-right">
                                                                 <div className="level-item">
-                                                                <div className="dropdown is-right is-up">
+                                                                <div className={this.state.active ? "dropdown is-right is-up is-active" : "dropdown is-right is-up" }>
                                                                     <div className="dropdown-trigger">
-                                                                        <span className="icon icon-task" aria-haspopup="true" aria-controls="dropdown-menu" >
+                                                                        <span className="icon icon-task" aria-haspopup="true" onClick={() => this.changeActive()} aria-controls="dropdown-menu2" >
                                                                             <FontAwesomeIcon icon={faEllipsisV} />
                                                                         </span>
                                                                     </div>
-                                                                    <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                                                                    <div className="dropdown-menu" id="dropdown-menu2" role="menu">
                                                                         <div className="dropdown-content">
                                                                             <a href="#" className="dropdown-item">
                                                                                 Done
